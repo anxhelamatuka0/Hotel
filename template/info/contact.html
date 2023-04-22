@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block tiulli %}BLOG | CONTACT{% endblock  %}
+{% block kontent %}
+
+<section class="bg-light">
+	<div class="container py-5">
+		<div class="p-5 lc-block">
+			<div class="lc-block">
+				<div editable="rich">
+					<p>Free Consultation </p>
+
+				</div>
+			</div>
+			<div class="lc-block">
+				<div editable="rich">
+					<h2 class="fw-bolder display-3">Get in touch.
+					</h2>
+				</div>
+			</div>
+			<div class="lc-block col-md-8">
+				<div editable="rich">
+					<p class="lead">For room reservations, bookings, and inquiries about availability, rates, and special offers, our reservation team is at your service. Contact us via phone or email, and we will be delighted to assist you in securing your reservation and planning your stay with us.
+					</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="p-5 lc-block shadow rounded-3 col-xl-10 offset-xl-1">
+
+			<form>
+
+				<div class="form-group mb-4">
+					<label>Your Name (optional)</label>
+					<input name="mouseglue" type="text" class="form-control" placeholder="John Doe" value="" autocomplete="off" hidden="">
+					<input name="name" type="text" class="form-control" placeholder="John Doe" value="">
+				</div>
+
+				<div class="form-group mb-4">
+					<label>Your Email Address</label>
+					<input name="email" type="email" class="form-control" placeholder="name@example.com" value="">
+				</div>
+
+				<div class="form-group mb-4">
+					<label>Subject (optional)</label>
+					<input name="subject" type="text" class="form-control" placeholder="Contact Subject">
+				</div>
+
+				<div class="form-group mb-4">
+					<label>Your Message</label>
+					<textarea name="message" class="form-control" rows="3" maxlength="300"></textarea>
+				</div>
+
+				<button type="submit" class="btn btn-primary btn-lg">Submit Form</button>
+
+				
+			</form>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="container-fluid">
+		<div class="row align-items-center">
+			<div class="col-lg-6 d-flex justify-content-center">
+				<div class="lc-block col-lg-8 ">
+					<div editable="rich">
+
+						<h2>Feedback & Suggestions:
+</h2>
+
+						<p>At Royal Hotel, we value your feedback and suggestions. If you have any comments, suggestions, or feedback about your experience with us, please do not hesitate to contact us. We are committed to continuously improving our services and ensuring your satisfaction.
+
+						</p>
+					</div>
+				</div><!-- /lc-block -->
+			</div><!-- /col -->
+			<div class="col-lg-6">
+				<div class="lc-block overflow-hidden ">
+					<div class="ratio ratio-1x1 vh-50" lc-helper="video-embed">
+						<div class="ratio ratio-16x9" lc-helper="gmap-embed">
+							<img class="img-fluid" src="https://images.unsplash.com/photo-1549488344-cbb6c34cf08b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZnVybml0dXJlfGVufDB8MXx8fDE2MzQ4MzA0Mzg&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080" alt="Photo by Maria Orlova" loading="lazy" srcset="https://images.unsplash.com/photo-1549488344-cbb6c34cf08b?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZnVybml0dXJlfGVufDB8MXx8fDE2MzQ4MzA0Mzg&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080 1080w, https://images.unsplash.com/photo-1549488344-cbb6c34cf08b??crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZnVybml0dXJlfGVufDB8MXx8fDE2MzQ4MzA0Mzg&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1549488344-cbb6c34cf08b??crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZnVybml0dXJlfGVufDB8MXx8fDE2MzQ4MzA0Mzg&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1549488344-cbb6c34cf08b??crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZnVybml0dXJlfGVufDB8MXx8fDE2MzQ4MzA0Mzg&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1549488344-cbb6c34cf08b??crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZnVybml0dXJlfGVufDB8MXx8fDE2MzQ4MzA0Mzg&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="">
+						</div>
+					</div>
+				</div><!-- /lc-block -->
+			</div><!-- /col -->
+		</div>
+	</div>
+</section>
+
+
+{% endblock  %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block titulli %}BLOG | ABOUT{% endblock  %}
+{% block kontent %}
+<H1>{{room.name}}</H1>
+<ul>
+    <li>
+        {{room.room_no}}
+    </li>
+    <li>
+        {{room.description}}
+    </li>
+    <li>
+        {{room.price}}
+    </li>
+</ul>
+<br>
+<form action="{% url 'book' %}" method="POST">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit">
+</form>
+
+{% endblock  %}
